@@ -1,0 +1,47 @@
+body {
+  padding-top: 100px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.artwork {
+  margin-bottom: 30px;
+}
+
+.img-responsive {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.artwork p {
+  /*font-size: 13px;*/
+  line-height: 18px;
+}
+.artwork .artist-name {
+  font-size: 15px;
+  font-weight: 400;
+}
+.artwork-name, .artwork-year {
+  font-size: 14px;
+}
+.artwork-medium, .artwork-size-cm, .artwork-size-in {
+  color: #666;
+  font-size: 13px;
+  font-weight: 200;
+}
+.price {
+  font-size: 15px;
+}
+
+.add-cart {
+  width: 150px;
+  background-color: deeppink;
+  color: #fff; 
+}
+
+.add-cart:hover {
+  color: pink;
+}
+
+.add-cart:focus {
+  outline: none; 
+  color: #fff;
+}

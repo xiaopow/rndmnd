@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rndmnd</title>
+    <!-- loading jquery library bootstrap jquery library and custom app.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/requests.js"></script>
+    <script src="js/home.js"></script>
+    <!-- <script src="js/application.js"></script> -->
+
+    <!-- loading bootstrap css and custom css -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <!-- custom font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-transparent" id="home-nav">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="navbar-brand" href="index.html">xiao yang</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">ARTISTS</a></li>
+            <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+            <li><a href="gallery.html">GALLERY</a></li>
+            <!-- <li><a href="#">About</a></li> -->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">LOG IN</a></li>
+            <li><a href="#">SIGN UP</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="main-carousel">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="intro-message">
+              <h1>Xiao Yang</h1>
+              <h3>Full Stack Web Developer</h3>
+              <hr class="intro-divider">
+              <ul class="list-inline intro-social-buttons">
+                <li>
+                  <a href="https://github.com/xiaopow" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                </li>
+                <li>
+                  <a href="https://hk.linkedin.com/in/xiaoxy" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="featured-artwork-box container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <p class="text-center header">Featured artwork</p>
+          <div class="featured-artwork-top">
+            <div class="col-sm-4 featured-art" id="featured-artwork-1">
+              <a href="#">
+                <img class="img-responsive col-xs-12" src="assets/artworks/1-bird.jpg">
+              </a>
+              <p> 
+                <span class="artist-name">Zhu LiJuan</span><br>
+                <em>
+                  <span class="artwork-name">Bird 1</span>, <span class="artwork-year">2012</span>
+                </em><br>
+                <span class="artwork-medium">water colour on xuan paper</span>
+                <span class="price-tag"><span class="currency">HKD</span> <span class="price">100</span></span>
+              </p>
+            </div>
+            <div class="col-sm-4 featured-art" id="featured-artwork-2">
+              <a href="#">
+                <img class="col-xs-12" src="assets/artworks/2-bird.jpg">
+              </a>
+              <p> 
+                <span class="artist-name">Zhu LiJuan</span><br>
+                <em>
+                  <span class="artwork-name">Bird 2</span>, <span class="artwork-year">2012</span>
+                </em><br>
+                <span class="artwork-medium">water colour on xuan paper</span>
+                <span class="price-tag"><span class="currency">HKD</span> <span class="price">100</span></span>
+              </p>
+            </div>
+            <div class="col-sm-4 featured-art" id="featured-artwork-3">
+              <a href="#">
+                <img class="col-xs-12" src="assets/artworks/3-bird.jpg">
+              </a>
+              <p> 
+                <span class="artist-name">Zhu LiJuan</span><br>
+                <em>
+                  <span class="artwork-name">Bird 3</span>, <span class="artwork-year">2012</span>
+                </em><br>
+                <span class="artwork-medium">water colour on xuan paper</span>
+                <span class="price-tag"><span class="currency">HKD</span> <span class="price">100</span></span>
+              </p>
+            </div>  
+          </div>
+          <div class="featured-artwork-bot">
+            <div class="col-sm-6 featured-art" id="featured-artwork-4">
+              <a href="#">
+                <img class="col-xs-12" src="assets/artworks/3-lady.jpg">
+              </a>
+              <p> 
+                <span class="artist-name">Zhu LiJuan</span><br>
+                <em>
+                  <span class="artwork-name">Lady 1</span>, <span class="artwork-year">2012</span>
+                </em><br>
+                <span class="artwork-medium">water colour on xuan paper</span>
+                <span class="price-tag"><span class="currency">HKD</span> <span class="price">100</span></span>
+              </p>
+            </div>
+            <div class="col-sm-6 featured-art" id="featured-artwork-5">
+              <a href="#">
+                <img class="img-responsive col-xs-12" src="assets/artworks/2-dragonfly.jpg">
+              </a>
+              <p> 
+                <span class="artist-name">Zhu LiJuan</span><br>
+                <em>
+                  <span class="artwork-name">Dragonfly 3</span>, <span class="artwork-year">2012</span>
+                </em><br>
+                <span class="artwork-medium">water colour on xuan paper</span>
+                <span class="price-tag"><span class="currency">HKD</span> <span class="price">100</span></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="featured-artist-box container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <p class="text-center header">Featured artist</p>
+          <div class="featured-artist">
+            <div class="col-sm-6">
+              <img class="img-responsive" src="assets/artists/lijuan2.jpg">
+            </div>
+            <div class="col-sm-6">
+              <div class="bio">
+                <h4>Zhu Li Juan</h4>
+                <p>
+                  Over the years, Li Juan has moved between Zurich, Como, Hong Kong, and Chengdu in search of subjects and motivation for her paintings. With a natural flare for colour and years of training, Lijuan's art work effortlessly combines Western impressionism with Eastern art techniques to create pieces of great beauty and serenity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

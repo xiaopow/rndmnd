@@ -1,0 +1,31 @@
+body {
+  padding-top: 70px;
+}
+
+.artwork-item {
+  margin-bottom: 25px;
+}
+
+.artwork-item img {
+  margin-bottom: 5px;
+}
+
+.artwork-item p {
+  line-height: 14px;
+  font-size: 13px;
+  color: #666;
+}
+.artwork-name {
+  font-size: 13px;
+}
+.artist-name, .artwork-year {
+  /*font-size: 12px;*/
+  font-weight: 200;
+}
+.artwork-medium {
+  font-size: 12px;
+  font-weight: 200;
+}
+.price-tag {
+  float: right;
+}

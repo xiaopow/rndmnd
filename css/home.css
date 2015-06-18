@@ -1,0 +1,129 @@
+.main-carousel {
+  z-index: -1;
+  width: 100vw;
+  /*padding-top: 100px;*/
+  min-height: 600px;
+  background-image: url(../assets/homepage/cab-window-429.gif);
+  background-size: cover;
+  /*background-color: deeppink;*/
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  text-align: center;
+}
+
+.carousel-header {
+  color: #fff;
+}
+
+.intro-message {
+  color: #f8f8f8;
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+  margin: 0;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+  font-size: 5em;
+}
+
+.intro-divider {
+  width: 400px;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+  .intro-message {
+    padding-bottom: 15%;
+  }
+
+  .intro-message > h1 {
+    font-size: 3em;
+  }
+
+  ul.intro-social-buttons > li {
+    /*display: block;*/
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  ul.intro-social-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+
+  .intro-divider {
+    width: 100%;
+  }
+}
+
+.network-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.featured-artwork-box {
+  margin-top: 600px;
+  background-color: white;
+}
+
+.header {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 17px;
+  font-family: 'Times New Roman';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.featured-artwork-box img {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.featured-art {
+  padding: 0 8px;
+  margin-bottom: 10px;
+}
+
+.featured-art p {
+  line-height: 14px;
+  font-size: 13px;
+  color: #666;
+}
+.artwork-name {
+  font-size: 13px;
+}
+.artist-name, .artwork-year {
+  /*font-size: 12px;*/
+  font-weight: 200;
+}
+.artwork-medium {
+  font-size: 12px;
+  font-weight: 200;
+}
+.price-tag {
+  float: right;
+}
+
+.featured-artist-box {
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+.featured-artist div {
+  padding: 0 8px;
+}
+
+.bio h4 {
+  vertical-align: middle;
+}
