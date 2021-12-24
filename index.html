@@ -3,9 +3,10 @@
   <head>
     <title>Rndmnd</title>
     <!-- loading jquery library bootstrap jquery library and custom app.js -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="js/requests.js"></script>
+    <!-- // <script src="js/requests.js"></script> -->
     <script src="js/home.js"></script>
     <!-- <script src="js/application.js"></script> -->
 
@@ -17,12 +18,12 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     
   </head>
-  <body>
+  <body data-spy="scroll" data-target="home-nav">
     <nav class="navbar navbar-default navbar-fixed-top navbar-transparent" id="home-nav">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -33,19 +34,17 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">ARTISTS</a></li>
-            <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
-            <li><a href="gallery.html">GALLERY</a></li>
-            <!-- <li><a href="#">About</a></li> -->
+            <li><a href="#portfolios">Portfolios</a></li>
+            <li><a href="#about">About</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
+          <!-- ul class="nav navbar-nav navbar-right">
             <li><a href="#">LOG IN</a></li>
             <li><a href="#">SIGN UP</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+          </ul> -->
+        </div>
+      </div>
     </nav>
     <div class="main-carousel">
       <div class="container">
@@ -70,98 +69,124 @@
     </div>
     <div class="featured-artwork-box container-fluid">
       <div class="row">
-        <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-          <p class="text-center header">Featured artwork</p>
+        <div id="portfolios" class="col-xs-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+          <p class="text-center header">Portfolios</p>
           <div class="featured-artwork-top">
-            <div class="col-sm-4 featured-art" id="featured-artwork-1">
+            <div class="col-sm-6 featured-art">
               <a href="#">
-                <img class="img-responsive col-xs-12" src="assets/artworks/1-bird.jpg">
+                <img class="col-xs-12" src="assets/portfolios/zlj.png">
               </a>
               <p> 
-                <span class="artist-name">Zhu LiJuan</span><br>
-                <em>
-                  <span class="artwork-name">Bird 1</span>, <span class="artwork-year">2012</span>
+                <span class="artist-name">Zhu Li Juan</span>
+                <em class="port-desc-lite">
+                  <span class="artwork-name">Chinese Artist Portfolio</span>, <span class="artwork-year">2014</span>
                 </em><br>
-                <span class="artwork-medium">water colour on xuan paper</span>
-                <span class="price-tag"><span class="currency">HKD</span> <span class="price">100</span></span>
+                <span class="port-desc">A website that features the bio and artworks of Zhu Li Juan.</span><br/>
+                <span class="artwork-medium">HTML | CSS | JS</span>
               </p>
             </div>
-            <div class="col-sm-4 featured-art" id="featured-artwork-2">
-              <a href="#">
-                <img class="col-xs-12" src="assets/artworks/2-bird.jpg">
+            <div class="col-sm-6 featured-art">
+              <a href="http://smartowl.meteor.com/">
+                <img class="img-responsive col-xs-12" src="assets/portfolios/smartowl.png">
               </a>
               <p> 
-                <span class="artist-name">Zhu LiJuan</span><br>
-                <em>
-                  <span class="artwork-name">Bird 2</span>, <span class="artwork-year">2012</span>
+                <span class="artist-name">Smart Owl</span>
+                <em class="port-desc-lite">
+                  <span class="artwork-name">Game Platform For Children</span>, <span class="artwork-year">2015</span>
                 </em><br>
-                <span class="artwork-medium">water colour on xuan paper</span>
-                <span class="price-tag"><span class="currency">HKD</span> <span class="price">100</span></span>
+                <span class="port-desc">A web app for children to play math and image recognition games.</span><br/>
+                <span class="artwork-medium">HTML | CSS | Meteor.JS</span>
               </p>
             </div>
-            <div class="col-sm-4 featured-art" id="featured-artwork-3">
-              <a href="#">
-                <img class="col-xs-12" src="assets/artworks/3-bird.jpg">
+            <div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>
+            <div class="col-sm-6 featured-art">
+              <a href="http://nensuart.bitballoon.com">
+                <img class="img-responsive col-xs-12" src="assets/portfolios/nensuart.png">
               </a>
               <p> 
-                <span class="artist-name">Zhu LiJuan</span><br>
-                <em>
-                  <span class="artwork-name">Bird 3</span>, <span class="artwork-year">2012</span>
+                <span class="artist-name">Nensuart</span>
+                <em class="port-desc-lite">
+                  <span class="artwork-name">Chinese Art Gallery Platform</span>, <span class="artwork-year">2015</span>
                 </em><br>
-                <span class="artwork-medium">water colour on xuan paper</span>
-                <span class="price-tag"><span class="currency">HKD</span> <span class="price">100</span></span>
+                <span class="port-desc">A platform that showcases Chinese water colour paintings from up and coming artists.</span><br/>
+                <span class="artwork-medium">HTML | CSS | JS | Node.JS | MongoDB</span>
               </p>
-            </div>  
+            </div>
+            <div class="col-sm-6 featured-art">
+              <a href="https://coconut-wdi7.herokuapp.com/#/">
+                <img class="col-xs-12" src="assets/portfolios/coconut.png">
+              </a>
+              <p> 
+                <span class="artist-name">Coconut</span>
+                <em class="port-desc-lite">
+                  <span class="artwork-name">GeoLocation Image Sharing App</span>, <span class="artwork-year">2015</span>
+                </em><br>
+                <span class="port-desc">A web app that shows a feed of pictures uploaded around you recently.</span><br/>
+                <span class="artwork-medium">HTML | CSS | Angular.JS | Ruby on Rails | PostgreSQL</span>
+              </p>
+            </div>
           </div>
+          <div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>
           <div class="featured-artwork-bot">
-            <div class="col-sm-6 featured-art" id="featured-artwork-4">
-              <a href="#">
-                <img class="col-xs-12" src="assets/artworks/3-lady.jpg">
+            <div class="col-sm-6 featured-art">
+              <a href="http://brella.meteor.com/main">
+                <img class="img-responsive col-xs-12" src="assets/portfolios/brella.png">
               </a>
               <p> 
-                <span class="artist-name">Zhu LiJuan</span><br>
-                <em>
-                  <span class="artwork-name">Lady 1</span>, <span class="artwork-year">2012</span>
+                <span class="artist-name">Brella</span>
+                <em class="port-desc-lite">
+                  <span class="artwork-name">Chance Of Rain Notifications</span>, <span class="artwork-year">2015</span>
                 </em><br>
-                <span class="artwork-medium">water colour on xuan paper</span>
-                <span class="price-tag"><span class="currency">HKD</span> <span class="price">100</span></span>
+                <span class="port-desc">A web app which displays the chance of rain prediction and notifies users.</span><br/>
+                <span class="artwork-medium">HTML | CSS | Meteor.JS</span>
               </p>
             </div>
-            <div class="col-sm-6 featured-art" id="featured-artwork-5">
-              <a href="#">
-                <img class="img-responsive col-xs-12" src="assets/artworks/2-dragonfly.jpg">
+            <div class="col-sm-6 featured-art">
+              <a href="http://basketball-game-score-keeper.bitballoon.com">
+                <img class="col-xs-12" src="assets/portfolios/basketball.png">
               </a>
               <p> 
-                <span class="artist-name">Zhu LiJuan</span><br>
-                <em>
-                  <span class="artwork-name">Dragonfly 3</span>, <span class="artwork-year">2012</span>
+                <span class="artist-name">iBasketball</span>
+                <em class="port-desc-lite">
+                  <span class="artwork-name">Basketball Game Score Keeper</span>, <span class="artwork-year">2015</span>
                 </em><br>
-                <span class="artwork-medium">water colour on xuan paper</span>
-                <span class="price-tag"><span class="currency">HKD</span> <span class="price">100</span></span>
+                <span class="port-desc">A web app that records player scores, fouls, time outs and time keeping for basketball.</span><br/>
+                <span class="artwork-medium">HTML | CSS | JS</span>
               </p>
             </div>
+
           </div>
         </div>
       </div>
     </div>
     <div class="featured-artist-box container-fluid">
       <div class="row">
-        <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-          <p class="text-center header">Featured artist</p>
+        <div id="about" class="col-xs-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+          <p class="text-center header">A little summary</p>
           <div class="featured-artist">
-            <div class="col-sm-6">
-              <img class="img-responsive" src="assets/artists/lijuan2.jpg">
+            <div class="col-sm-2 col-sm-offset-2" style="max-width: 200px">
+              <img class="img-responsive" src="assets/artists/xiao.jpg">
             </div>
             <div class="col-sm-6">
               <div class="bio">
-                <h4>Zhu Li Juan</h4>
                 <p>
-                  Over the years, Li Juan has moved between Zurich, Como, Hong Kong, and Chengdu in search of subjects and motivation for her paintings. With a natural flare for colour and years of training, Lijuan's art work effortlessly combines Western impressionism with Eastern art techniques to create pieces of great beauty and serenity.
+                  <strong>Xiao</strong> loves technology and the real world application of it. He has dabbled in finance and retail and spent recent years building a retail business from the ground up. But he found himself yearning for more and decided to enter the world of programming. He took a deep dive into callback hell and never looked back.
+                </p>
+                <p>
+                  He is now a teacher at the online coding bootcamp <a href="https://www.altcademy.com">Altcademy</a> and teaches courses in front-end web development and blockchain.
+                </p>
+                <p>
+                  Find him on <a href="https://github.com/xiaopow">GitHub</a>, <a href="https://hk.linkedin.com/in/xiaoxy">LinkedIn</a> or send him an email: xiaoyang88 @ gmail.com.
                 </p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="col-xs-12" id="footer">
+      <div class="col-lg-10 col-lg-offset-1">
+        <p class="copyright text-muted small">Copyright &#169; Savant Ltd. 2017. All Rights Reserved</p>
       </div>
     </div>
 

@@ -1,4 +1,4 @@
-// $(document).ready(function(){
+$(document).ready(function(){
   var arrayArt = [];
 
   $(document).on('scroll', function(){
@@ -13,18 +13,6 @@
     };
   });
 
-  getFeaturedArtworks(function(artworks) {
+  $('body').scrollspy({ target: '#home-nav' });
 
-    for (i=0; i<5; i++) {     
-      var htmlId = '#featured-artwork-' + (i+1);
-      $(htmlId+' a').attr('href','artworks.html?id='+artworks[i]._id);
-      $(htmlId+' img').attr('src','assets/artworks/'+artworks[i].img_url);
-      $(htmlId+' .artist-name').text(artworks[i].artist);
-      $(htmlId+' .artwork-name').text(artworks[i].name);
-      $(htmlId+' .artwork-year').text(artworks[i].year);
-      $(htmlId+' .artwork-medium').text(artworks[i].medium);
-      $(htmlId+' .price').text(artworks[i].price);
-    }
-  });
-
-// });
+});
